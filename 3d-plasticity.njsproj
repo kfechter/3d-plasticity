@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77aa8edb-b9e1-4240-806a-c39830a933a5}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>3d-plasticity.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="3d-plasticity.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="app.js" />
+    <Content Include="setup.js" />
+    <Content Include="controllers\api.js" />
+    <Content Include="controllers\bids.js" />
+    <Content Include="controllers\checkout.js" />
+    <Content Include="controllers\contact.js" />
+    <Content Include="controllers\fileupload.js" />
+    <Content Include="controllers\home.js" />
+    <Content Include="controllers\price.js" />
+    <Content Include="controllers\user.js" />
+    <Content Include="controllers\viewer.js" />
+    <Content Include="lib\helpers.js" />
+    <Content Include="models\File.js" />
+    <Content Include="models\Order.js" />
+    <Content Include="models\User.js" />
+    <Content Include="public\3dplasticity-transparent.png" />
+    <Content Include="public\3dplasticity.png" />
+    <Content Include="public\3dprintlogo.png" />
+    <Content Include="public\fake-data.json" />
+    <Content Include="test\app.js" />
+    <Content Include="test\models.js" />
+    <Content Include="public\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\images\3d.png" />
+    <Content Include="public\js\application.js" />
+    <Content Include="public\js\jsc3d.3ds.js" />
+    <Content Include="public\js\jsc3d.console.js" />
+    <Content Include="public\js\jsc3d.js" />
+    <Content Include="public\js\jsc3d.touch.js" />
+    <Content Include="public\js\jsc3d.webgl.js" />
+    <Content Include="public\js\jsc3d_ie.js" />
+    <Content Include="public\js\main.js" />
+    <Content Include="public\js\lib\bootstrap.min.js" />
+    <Content Include="public\js\lib\jquery-2.1.3.min.js" />
+    <Content Include="views\api\facebook.jade" />
+    <Content Include="views\api\foursquare.jade" />
+    <Content Include="views\api\github.jade" />
+    <Content Include="views\api\instagram.jade" />
+    <Content Include="views\api\lastfm.jade" />
+    <Content Include="views\api\linkedin.jade" />
+    <Content Include="views\api\lob.jade" />
+    <Content Include="views\api\nyt.jade" />
+    <Content Include="views\api\ordrin.jade" />
+    <Content Include="views\api\paypal.jade" />
+    <Content Include="views\api\scraping.jade" />
+    <Content Include="views\api\steam.jade" />
+    <Content Include="views\api\stripe.jade" />
+    <Content Include="views\api\tumblr.jade" />
+    <Content Include="views\api\twilio.jade" />
+    <Content Include="views\api\twitter.jade" />
+    <Content Include="views\api\venmo.jade" />
+    <Content Include="views\api\yahoo.jade" />
+    <Content Include="views\partials\3dplasticity.png" />
+    <Content Include="views\partials\3dprintlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3d-plasticity" />
+    <Folder Include="3d-plasticity\3d-plasticity" />
+    <Folder Include="controllers" />
+    <Folder Include="lib" />
+    <Folder Include="models" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\css\themes" />
+    <Folder Include="public\css\vendor" />
+    <Folder Include="public\css\vendor\bootstrap" />
+    <Folder Include="public\css\vendor\bootstrap\mixins" />
+    <Folder Include="public\css\vendor\font-awesome" />
+    <Folder Include="public\fonts" />
+    <Folder Include="public\images" />
+    <Folder Include="public\js" />
+    <Folder Include="public\js\lib" />
+    <Folder Include="test" />
+    <Folder Include="views" />
+    <Folder Include="views\account" />
+    <Folder Include="views\api" />
+    <Folder Include="views\checkout" />
+    <Folder Include="views\layouts" />
+    <Folder Include="views\partials" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

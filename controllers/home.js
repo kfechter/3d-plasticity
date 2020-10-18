@@ -1,12 +1,7 @@
-var AWS = require('aws-sdk');
 var fs = require('fs');
 var User = require('../models/User');
 var File = require('../models/File');
 
-AWS.config.loadFromPath('./config/AWSConfig.json');
-AWS.config.update({ region: "", endpoint: "https://s3.amazonaws.com" });
-
-var AWSUrl = 'https://s3.amazonaws.com/3d-plasticity/';
 
 
 exports.upload = function (req, res) {

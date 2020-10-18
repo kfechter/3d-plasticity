@@ -97,15 +97,16 @@ var ClockworkApi = function(auth)
         var blankPayload = util._extend({}, rootRequest);
         var payload = {Message: blankPayload};
 
-        if (messages instanceof Array){
-            var smsArray = [];
-            for (var i = 0; i < messages.length; i ++) {
-                smsArray.push({SMS:messages[i]});
-            };
-            payload.Message['#list'] = smsArray;
-        } else {
+        // GT: Bugfix to wrapper to enable multiple recipients
+        // if (messages instanceof Array){
+        //     var smsArray = [];
+        //     for (var i = 0; i < messages.length; i ++) {
+        //         smsArray.push({SMS:messages[i]});
+        //     };
+        //     payload.Message['#list'] = smsArray;
+        // } else {
             payload.Message.SMS = messages; // Should work with arrays (multiple messages) or a single object literal
-        }
+        // }
 
         var xml = xmlbuilder.create(payload,{version: '1.0', encoding: 'UTF-8'}).end();
 

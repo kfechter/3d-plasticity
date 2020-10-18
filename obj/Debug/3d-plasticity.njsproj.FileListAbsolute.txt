@@ -1,0 +1,3 @@
+D:\Projects\git\3d-plasticity\obj\Debug\3d-plasticity.njsprojAssemblyReference.cache
+D:\Projects\git\3d-plasticity\obj\Debug\3d-plasticity.njsproj.CoreCompileInputs.cache
+D:\Projects\git\3d-plasticity\bin\Microsoft.NodejsTools.WebRole.dll
