@@ -22,7 +22,7 @@ var userSchema = new mongoose.Schema({
       printerHighestResolution: { type: String, default: '' },
       examplePrints: { type: String, default: '' },
       supportsABS: { type: Boolean, default: false },
-      supportsPLA: {type: Boolean, default : false},
+      supportsPLA: { type: Boolean, default : false },
       rating: {type: Number, default: 0}
   },
   resetPasswordToken: String,

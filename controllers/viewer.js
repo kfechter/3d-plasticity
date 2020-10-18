@@ -4,7 +4,7 @@ var exphbs = require('express-handlebars');
  * Home page.
  */
 exports.viewer = function (req, res) {
-        var objthingy = req.session.filename
+    var objthingy = req.session.stlFile
         res.render('viewer', {
             title: 'viewer',
             stlFile: objthingy

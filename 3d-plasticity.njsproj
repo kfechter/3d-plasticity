@@ -19,15 +19,14 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
     <Content Include="3d-plasticity.js" />
+    <Content Include="config\passport.js" />
+    <Content Include="config\secrets.js" />
+    <Content Include="controllers\fileupload.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="app.js" />
     <Content Include="setup.js" />
-    <Content Include="controllers\api.js" />
     <Content Include="controllers\bids.js" />
     <Content Include="controllers\checkout.js" />
-    <Content Include="controllers\contact.js" />
-    <Content Include="controllers\fileupload.js" />
     <Content Include="controllers\home.js" />
     <Content Include="controllers\price.js" />
     <Content Include="controllers\user.js" />
@@ -78,6 +77,7 @@
   <ItemGroup>
     <Folder Include="3d-plasticity" />
     <Folder Include="3d-plasticity\3d-plasticity" />
+    <Folder Include="config\" />
     <Folder Include="controllers" />
     <Folder Include="lib" />
     <Folder Include="models" />

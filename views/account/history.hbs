@@ -2,10 +2,10 @@
   <h3>Order History</h3>
 </div>
 
-{{#if user.accountHistory.uploadedFiles}}
+{{#if uploadedFiles}}
 <h2>
  <ul>
-	{{#each user.accountHistory.uploadedFiles as |uploadedFile|}}
+	{{#each uploadedFiles as |uploadedFile|}}
 		<li><a href="{{uploadedFile.s3Url}}">{{uploadedFile.fileName}}</a></li>
 	{{/each}}
 </ul>

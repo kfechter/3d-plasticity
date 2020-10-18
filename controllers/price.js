@@ -1,7 +1,7 @@
 var nodeStl = require('node-stl');
 
 exports.price = function(filename, cb) {
-	var stl = nodeStl(filename);
+	var stl = new nodeStl(filename);
 	setTimeout(function() {
 		var grams = stl.weight;
 		price = getPrice(grams, function(price) {
