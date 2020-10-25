@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "3d-plasticity", "3d-plasticity.njsproj", "{77AA8EDB-B9E1-4240-806A-C39830A933A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77AA8EDB-B9E1-4240-806A-C39830A933A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AA8EDB-B9E1-4240-806A-C39830A933A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AA8EDB-B9E1-4240-806A-C39830A933A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AA8EDB-B9E1-4240-806A-C39830A933A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {023FD71F-4418-4D39-AE55-76CC2613D1CA}
+	EndGlobalSection
+EndGlobal
